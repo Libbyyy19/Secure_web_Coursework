@@ -1,0 +1,10 @@
+html {margin:0;padding:0;border:0;}
+
+body{color:black;background-color:transparent;font-family:arial, sans-serif;font-size:12px;}
+
+/* Division styles */
+#banner-div {text-align: center}
+#page-content-div {}
+#clear-div {clear:both;}
+#left-div {float:left;width:20%;}
+#right-div{float:right;width:80%;}
