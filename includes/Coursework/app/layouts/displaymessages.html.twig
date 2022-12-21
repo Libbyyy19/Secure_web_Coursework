@@ -1,0 +1,15 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+    <h2>{{ page_heading_2 }}</h2>
+    <h2>Data</h2>
+    <table border="1">
+        <tbody>
+        <tr><th>SIM number</th><th>Name</th><th>Email</th></tr>
+        {% for data_message in data_messages %}
+        <tr><td>{{ data_messgae.sim }}</td><td>{{ data_message.name }}</td><td>{{ data_message.email }}</td></tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br />
+    <p class="curr_page"><a href="{{ landing_page }}"> Homepage </a></p>
+{% endblock %}
