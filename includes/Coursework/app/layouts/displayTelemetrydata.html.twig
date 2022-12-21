@@ -1,0 +1,17 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+    <h2>{{ page_heading_2 }}</h2>
+    <h2>Telemetry Data</h2>
+    <table border="1">
+        <tbody>
+        <tr><td>Keypad</td><td>Heater</td><td>Fan</td><td>Four switches</td></tr>
+        {% for telemetry_data in telemetry_data_set %}
+        <tr><td>{{ telemetry_data.keypad }}</td><td>{{ telemetry_data.heater }}</td>
+        <td>{{ telemetry_data.fan }}</td><td>{{ telemetry_data.switchone }}</td>
+        <td>{{ telemetry_data.switchtwo }}</td><td>{{ telemetry_data.switchthree }}</td>
+        <td>{{ telemetry_data.switchfour }}</td><tr>
+        {% endfor %}
+        </tbody>
+    </table>
+<br />
+{% endblock %}

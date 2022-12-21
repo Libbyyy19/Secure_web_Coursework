@@ -1,0 +1,13 @@
+{% extends 'banner.html.twig' %}
+{% block content %}
+    <div id="login-div">
+        <form action = "{{ action }}" method = "post">
+            <p> <input type = "text" id="user-name" name="username" placeholder="Username"> </p>
+            <p> <input type = "password" id="password" name="password" placeholder="Password"> </p>
+            <button type="Submit"> Submit </button>
+        </form>
+
+
+    </div>
+
+{% endblock %}
