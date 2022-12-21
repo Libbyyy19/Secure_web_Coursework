@@ -1,4 +1,11 @@
 {% extends 'banner.html.twig' %}
+{% block content %}
+    <div id="page-content-div">
+        <h3> {{ page_heading_3 }}</h3>
+        <p> <a href=" {{ login_page }}"> Login </a></p>
+        <h2>{{ page_heading_2 }}</h2>
+        <p><a href=" {{ download_data }} "> Download Data </a></p>
+        <p> <a href="{{ display_data }}"> Display Data </a></p>
 
-
-{% block content %}{% endblock %}
+    </div>
+{% endblock %}
